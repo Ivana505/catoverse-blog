@@ -40,6 +40,31 @@ As a user I would like to:
 - Be able to use game on different devices.
 - Be able to see letters already used. 
 
+## Wireframes
+All wireframes are created with [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
+
+Main Page
+![landing page](documents/wireframes/main_page.png)
+
+About Us
+![about us](documents/wireframes/about_us.png)
+
+Nutrition and Health
+![nutrition and health](documents/wireframesnutriotion_and_health.png)
+
+Product Review
+![product review](documents/wireframes/product_review.png)
+
+Funny Cats
+![funny cats](documents/wireframes/funny_cats.png)
+
+Register Page
+![register page](documents/wireframes/register_page.png)
+
+Sign In Page
+![sign in page](documents/wireframes/sign_in_page.png)
+
+
 ## Testings
 
 To view all testing documentation please refer to [TESTING.md](TESTING.md)
@@ -91,9 +116,11 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [YouTube channel ](https://www.youtube.com/)
 
 
-  Other sources
-  - [](https://www..com) for 
-  - [PEP8 online](http://pep8online.com/) for checking code requirements.
+  Other sources for inspiration
+  - [Katzenworld](https://katzenworld.co.uk/)
+  - [The Purrington Post](https://www.thepurringtonpost.com/)
+  - [The Fluffy Kitty](https://thefluffykitty.com/)
+  - [The Catnip Times](https://www.thecatniptimes.com/)
 
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
