@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j%*rkr029s)-4$5$y^6w24zg3!mf0!q9ea8^kvyd)k9l(ww_)0'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-j%*rkr029s)-4$5$y^6w24zg3!mf0!q9ea8^kvyd)k9l(ww_)0')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['catoverse-blog.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
@@ -84,7 +84,7 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-ivana505-catoverseblog-2oh70e408ve.ws-eu34
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://qmjzynekhakmiq:04932ba98c99b072e5da3d13ec4095246e98860e750e45308337108bfe65ca8a@ec2-52-19-164-214.eu-west-1.compute.amazonaws.com:5432/da5peh0umqvl02')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
