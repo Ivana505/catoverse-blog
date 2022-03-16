@@ -1,1 +1,1 @@
-web: gunicorn catoverse-blog.wsgi:application
+web: gunicorn django_catoverse.wsgi:application
