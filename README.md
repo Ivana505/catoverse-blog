@@ -108,6 +108,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Git](https://git-scm.com/) - used for version control
 - [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
 - [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
+- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
 
 
 ## Credits and Acknowledgements
@@ -116,7 +117,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [YouTube channel ](https://www.youtube.com/)
 
 
-  Other sources for inspiration
+  Other sources
   - [Katzenworld](https://katzenworld.co.uk/)
   - [The Purrington Post](https://www.thepurringtonpost.com/)
   - [The Fluffy Kitty](https://thefluffykitty.com/)
