@@ -1,0 +1,1 @@
+web: gunicorn catoverse-blog.wsgi:application
