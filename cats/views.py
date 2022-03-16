@@ -14,4 +14,3 @@ def main_page(request):
 
 def sign_up(request):
     return render(request, 'cats/sign_up.html')
-    
