@@ -50,10 +50,10 @@ About Us
 ![about us](documents/wireframes/about_us.png)
 
 Nutrition and Health
-![nutrition and health](documents/wireframesnutriotion_and_health.png)
+![nutrition and health](documents/wireframes/nutrition_and_health.png)
 
 Product Review
-![product review](documents/wireframes/product_review.png)
+![product review](documents/wireframes/product_reviews.png)
 
 Funny Cats
 ![funny cats](documents/wireframes/funny_cats.png)
