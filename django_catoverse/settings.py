@@ -32,7 +32,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED+HOST = ['catoverse-blog.herokuapp.com', 'local host']
+ALLOWED_HOST = ['catoverse-blog.herokuapp.com', 'local host']
+
+
 
 #if development:
  #   ALLOWED_HOSTS = ['localhost']
