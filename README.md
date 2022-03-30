@@ -122,6 +122,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [The Purrington Post](https://www.thepurringtonpost.com/)
   - [The Fluffy Kitty](https://thefluffykitty.com/)
   - [The Catnip Times](https://www.thecatniptimes.com/)
+  - [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/) - for adding fotter with bootstrap
 
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
