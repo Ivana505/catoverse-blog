@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,35 +11,41 @@
     <link rel="stylesheet" href="static/css/style.css">
     <title>Catoverse Blog!</title>
 </head>
-<body class="d-flex justify-content-evenly h-100">
+
+<body>
     
 <!-- navigation -->
 <header>
-  <div class="navigation">
-    <ul calss="navbar">
-      <li>
-         <a href=#>About Us</a>
-    
-      <li>
-         <a href=#>Nutrition and Health</a>
+
+  <nav class="d-flex justify-content-center h-100">
+    <div class="container-fluid">
+ <ul class="nav justify-content-center">
+  
+      <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">About Us</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Nutrition and Health</a>
       </li>
-      <li>
-         <a href=#>Product Reviews</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Product Reviews</a>
       </li>
-      <li>
-         <a href=#>Funny Cats</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Funny Cats</a>
       </li>
-      <li>
-        <a href=#>Register</a>
-     </li>
-     <li>
-      <a href=#>Login</a>
-   </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
    </ul>
-  </nav>
-   
+  </div>
+</nav>
+
   <!-- code credits for social media to love running project -->
-  <ul class="social-media">
+  <ul class="d-flex justify-content-center h-100">
+   
     <li>
        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
           aria-label="Visit us on Facebook (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
@@ -50,41 +58,26 @@
        <a href="https://www.pinterest.com/" target="_blank" rel="noopener"
           aria-label="Visit us on Pinterest (opens in a new tab)"><i class="fab fa-pinterest-square"></i></a>
     </li>
-  </div>
+
+
   </header>
 
  
 
-  <footer class="text-center text-white" style="background-color: #45637d;">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Iframe -->
-      <section class="">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6">
-            <div class="ratio ratio-16x9">
-              <iframe
-                class="shadow-1-strong rounded"
-                src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section: Iframe -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-</footer>
- 
+
+  <main class="flex-shrink-0 main-bg">
+    {% block content %}
+    <!--content-->
+    {% endblock content%}
+  </main>
+
+ <div class="card text-white bg-dark mb-3 w-80">
+  <img class="card-img" src="documents/images/main_photo.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card title">Card title</h5> 
+    <p class="card-text">Footer</p>
+  </div>
+ </div>
 
  <!-- fontawesome script -->
  <script src="https://kit.fontawesome.com/5797e01b9b.js" crossorigin="anonymous"></script>

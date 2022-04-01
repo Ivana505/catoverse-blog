@@ -8,15 +8,19 @@ li {
     padding: 10px;
   }
 
-li > a {
+  li > a {
     text-decoration: none;
     color:black;
-
-  
 }
 
 ul {
     padding-top: 5px;
     display:block;
 }
+
+footer {
+    background-color: black;
+    color: white;
+}
+
 
