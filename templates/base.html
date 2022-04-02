@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +12,17 @@
     <title>Catoverse Blog!</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     
-<!-- navigation -->
-<header>
+  <!--navigation-->
+  <header>
 
-  <nav class="d-flex justify-content-center h-100">
+  <nav class="d-flex justify-content-center h-50">
     <div class="container-fluid">
  <ul class="nav justify-content-center">
   
       <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">About Us</a>
+         <a class="nav-link" aria-current="page" href="about.html">About Us</a>
        </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Nutrition and Health</a>
@@ -62,22 +62,23 @@
 
   </header>
 
- 
+ <div class="has-bg-img h-100">
+  <h2>Catoverse</h2>
+  <h4>Image set up</h4>
+   <img class="bg-img" src="documents/images/main_photo.jpg" alt="main_photo">
+ </div>
 
 
   <main class="flex-shrink-0 main-bg">
     {% block content %}
     <!--content-->
-    {% endblock content%}
+    {% endblock content %}
   </main>
 
- <div class="card text-white bg-dark mb-3 w-80">
-  <img class="card-img" src="documents/images/main_photo.jpg" alt="Card image">
-  <div class="card-img-overlay">
-    <h5 class="card title">Card title</h5> 
-    <p class="card-text">Footer</p>
-  </div>
- </div>
+
+ <footer class="footer mt-auto py-3 dark-bg">
+  <p class="m-0 text-center text-white">&copy;Catoverse Blog 2022</p>
+ </footer>
 
  <!-- fontawesome script -->
  <script src="https://kit.fontawesome.com/5797e01b9b.js" crossorigin="anonymous"></script>

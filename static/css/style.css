@@ -8,10 +8,15 @@ li {
     padding: 10px;
   }
 
-  li > a {
+  li > a  {
+    color:black;
+  }
+
+  .nav-link {
     text-decoration: none;
     color:black;
 }
+
 
 ul {
     padding-top: 5px;
@@ -19,8 +24,11 @@ ul {
 }
 
 footer {
-    background-color: black;
+    background-color: purple;
     color: white;
 }
 
+.bg-img {
+    background-image: url("documents/images/main_photo.jpg");
+}
 

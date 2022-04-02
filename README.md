@@ -122,8 +122,9 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [The Purrington Post](https://www.thepurringtonpost.com/)
   - [The Fluffy Kitty](https://thefluffykitty.com/)
   - [The Catnip Times](https://www.thecatniptimes.com/)
-  - [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/) - for adding fotter with bootstrap
+  - [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/) - for adding footer with bootstrap
   - [Get bootstrap](https://getbootstrap.com/docs/4.0/components/card/#header-and-footer) - to add footer to base.html by using cards
+  - [Toptal]https://www.toptal.com/designers/htmlarrows/) - to look for HTML Symbols
 
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
