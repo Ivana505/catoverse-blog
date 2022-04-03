@@ -35,7 +35,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOST = ['catoverse-blog.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['catoverse-blog.herokuapp.com', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
