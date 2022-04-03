@@ -102,8 +102,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_catoverse.wsgi.application'
-CSRF_TRUSTED_ORIGINS = ['https://8000-ivana505-catoverseblog-2oh70e408ve.\
-    ws-eu34.gitpod.io', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-ivana505-catoverseblog-2oh70e408ve.ws-eu34.gitpod.io', ]
 
 
 DATABASES = {

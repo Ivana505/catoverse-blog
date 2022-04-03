@@ -113,8 +113,11 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
 ## Credits and Acknowledgements
 
-  Social Media sources:
+  Image and Social Media sources:
 - [YouTube channel ](https://www.youtube.com/)
+- [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1196761) - image by Andreas Almstedt
+- [Pixabay](https://pixabay.com/users/naturell-10315240/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5237869) - image by Aline (Алевтина) Mueller
+- [Pixabay](https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3737295) - image by Adina Voicu
 
 
   Other sources
@@ -125,6 +128,8 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/) - for adding footer with bootstrap
   - [Get bootstrap](https://getbootstrap.com/docs/4.0/components/card/#header-and-footer) - to add footer to base.html by using cards
   - [Toptal]https://www.toptal.com/designers/htmlarrows/) - to look for HTML Symbols
+  - [Wagwalking](https://wagwalking.com/cat/condition/obesity) - text for the obesity in cats blog post
+  - [Humane Society](https://www.humanesociety.org/resources/trimming-cats-claws) - text for the trimming of cats claws
 
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
