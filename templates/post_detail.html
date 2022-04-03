@@ -34,7 +34,7 @@
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" metho="POST">
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
 
@@ -90,7 +90,7 @@
 
             {% if commented %}
             <div class="alert alert-success" role="alert">
-                Your comment is being reviewed
+                Your comment is being reviewed.
             </div>
 
             {% else %}
@@ -99,7 +99,7 @@
 
             <h3>Leave a comment:</h3>
             <p>Posting as: {{ user.username }}</p>
-            <form method="post" style="margin-top: 1.3em;">
+            <form method="POST" style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}
                 {% csrf_token %}
                 <button type="submit" class="btn btn-signup btn-lg">Submit</button>
