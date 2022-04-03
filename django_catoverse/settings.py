@@ -37,15 +37,9 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOST = ['catoverse-blog.herokuapp.com', 'localhost']
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
-#if development:
- #   ALLOWED_HOSTS = ['localhost']
-#else:
-   # ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
