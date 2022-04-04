@@ -2,7 +2,7 @@
 Catoverse-Blog is designed for cat lovers. It helps understand cats behaviour and their needs better.
 Users can share tips and experiences.
 
-You can access live page to Catoverse-Blog by clicking [here](https://.com/).
+You can access live page to Catoverse-Blog by clicking [here](https://catoverse-blog.herokuapp.com/).
 
 ![landing page](.png)
 
@@ -11,34 +11,40 @@ You can access live page to Catoverse-Blog by clicking [here](https://.com/).
 
   - Epics and User Stories are made with an Agile approach. 
 
-  - As a User I want** so that I can ** to **.
+  - As a User I want toi see comment box so I can comment blog article.
+  - As a User I want to see a heart symbol so that I can like the post or a comment written by another user.
+  - As a User I want to see register or sign up button so that I can create my account to be able to comment blog articles.
+  - As a User I would like to see a delete button on a comments page so that I can delete my comment if I want.
+  - As a User I want to see edit button so that I can edit my comment.
 
 ## Features
-- Greeting sign
-    - 
-    - 
+- Navigation
+    - Navigation is set at the center of the page with options to choose : 
+      "About Us", "Nutrition and Health", "Product Reviews", "Funny Cats", "Register" and "Login".
 
-![greeting](.png)
+![navigation](.png)
 
 
 ## Goals
 
 ### Visitor goals
 
-The target audience are kids and adults who like hidden words type of games : 
+The target audience are all the people who love cats and are interested in different topics related to cats.
 
-- To easily understand instructions of the game.
-- To learn new city and country names.
-- To have fun.
+- To view and find interesting blog posts about cats.
+- To learn more about cats and their behaviour.
+- To be able to register and comment blog posts.
+- To like blog posts.
+- To write about their experience with cats and to give advice.
 
 ### User Goals
 
 As a user I would like to:
 
-- Have more categories to choose from.
-- Be able to play against another human player or machine.
-- Be able to use game on different devices.
-- Be able to see letters already used. 
+- Be able register and create account.
+- Be able to comment blog posts.
+- Be able to delete my posts.
+- Be able to like posts.
 
 ## Wireframes
 All wireframes are created with [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
@@ -79,7 +85,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Ivana505/catoverse-blog)
 
-The site was deployed to [Heroku](https://heroku.com/) pages using following steps: 
+The site was deployed to [Heroku](https://catoverse-blog.herokuapp.com/) pages using following steps: 
    - Sign up or Login to Heroku 
    - Click on the "NEW APPLICATION" and create an App name and choose your region
    - Click on "Deploy" and choose your deployment method
@@ -95,7 +101,7 @@ The site was deployed to [Heroku](https://heroku.com/) pages using following ste
 import pyfiglet
 import random
 import sys
-   
+import os
 
 The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
@@ -112,6 +118,8 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
 
 ## Credits and Acknowledgements
+
+  Main credit for the code that helped me in this learning process and to create this project was Full Stack Frameworks (FST) videos: "Hello Django" and "I Think Therefore I Blog".
 
   Image and Social Media sources:
 - [YouTube channel ](https://www.youtube.com/)
