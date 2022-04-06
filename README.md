@@ -124,8 +124,9 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   Image and Social Media sources:
 - [YouTube channel ](https://www.youtube.com/)
 - [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1196761) - image by Andreas Almstedt
-- [Pixabay](https://pixabay.com/users/naturell-10315240/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5237869) - image by Aline (Алевтина) Mueller
-- [Pixabay](https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3737295) - image by Adina Voicu
+- [Pixabay](https://pixabay.com/users/naturell-10315240/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5237869) - photo by Aline (Алевтина) Mueller
+- [Pixabay](https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3737295) - photo by Adina Voicu
+- [Pixabay](https://pixabay.com/users/vistawei-915694/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1092371") - photo by vistawei
 
 
   Other sources
@@ -138,7 +139,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [Toptal]https://www.toptal.com/designers/htmlarrows/) - to look for HTML Symbols
   - [Wagwalking](https://wagwalking.com/cat/condition/obesity) - text for the obesity in cats blog post
   - [Humane Society](https://www.humanesociety.org/resources/trimming-cats-claws) - text for the trimming of cats claws
-
+  - [Litter Robot](https://www.litter-robot.com/blog/heterochromia-cats-with-different-colored-eyes/) - text for heterochromia blog post
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
 
