@@ -20,9 +20,29 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
 ## Features
 - Navigation
     - Navigation is set at the center of the page with options to choose : 
-      "About Us", "Nutrition and Health", "Product Reviews", "Funny Cats", "Register" and "Login".
+      "Home", "Nutrition and Health", "Funny Cats", "Register" and "Login".
+
+      - "Home" brings back User to the main page.
+      - "Nutrition and Health" shows blog content related to cats health.
+      - "Funny Cats" is a page where User can comment funny images and be involve in a competition and Weekly prize draws.
 
 ![navigation](.png)
+
+  - Blog post images with Author's name, Title and main topic, date when the blog is posted and paw icon which shows how many "paws/likes" does each blog have.
+
+![Blog Post](.png)
+
+- Footer with Copyright sign, year when it was created and Blog name.
+
+![Footer](.png)
+
+- Register link where the User can register and start commenting on the blog posts and "like" them.
+
+![Register](.png)
+
+- Logout link where User can logout from the account.
+
+![Logout](.png)
 
 
 ## Goals
@@ -69,6 +89,8 @@ Register Page
 
 Sign In Page
 ![sign in page](documents/wireframes/sign_in_page.png)
+
+Style and font Used:
 
 
 ## Testings

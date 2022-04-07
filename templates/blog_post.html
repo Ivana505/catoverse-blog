@@ -34,17 +34,17 @@
                         {% if liked %}
                         <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
                            Liked
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-paw"></i>
                         </button>
                         {% else %}
                         <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
                            Not Liked
-                        <i class="far fa-heart"></i>
+                        <i class="fas fa-paw"></i>
                         </button>
                         {% endif %}
                      </form>
                      {% else %}
-                     <span class="text-secondary"><i class="far fa-heart"></i></span>
+                     <span class="text-secondary"><i class="fas fa-paw"></i></span>
                      {% endif %}
                      <span class="text-secondary"> {{ post.number_of_likes }}</span>
                   </strong>
