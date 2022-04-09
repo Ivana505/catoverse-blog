@@ -137,6 +137,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
 - [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+- [Font Awesome](https://fontawesome.com/) - for Icons on the page
 
 
 ## Credits and Acknowledgements
