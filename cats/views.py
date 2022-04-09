@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
@@ -77,4 +78,22 @@ class PostComment(View):
          )
 
 class NutritionPageView(View):
-    template_name = 'obesity.html'
+    template_name = 'obesity.html',
+   
+
+class FunnyPageView(View):
+    template_name = 'funny.html',
+
+#class NutritionListView(ListView):
+  #  queryset = nutrition.objects.filter(status=1).order_by("-created_on")
+   # template_name = "nutrition.html"
+  #  paginate_by = 3
+    
+   # def get_queryset_nutrition(self, **kwargs):
+     #   queryset = super().get_queryset_nutrition(**kwargs)
+       # queryset['nutrition'] = NutritionListView
+       # return nutrition
+        #queryset = ListView.objects.filter(status=1)
+        #post = get_object_or_404(queryset, slug=slug)
+        
+       

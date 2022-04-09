@@ -41,6 +41,7 @@ footer {
 }
 
 
-
-
-
+.btn-signup {
+    background-color: pink;
+    color: black;
+}

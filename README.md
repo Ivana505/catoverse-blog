@@ -163,6 +163,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [Humane Society](https://www.humanesociety.org/resources/trimming-cats-claws) - text for the trimming of cats claws
   - [Litter Robot](https://www.litter-robot.com/blog/heterochromia-cats-with-different-colored-eyes/) - text for heterochromia blog post
   - [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page) - for adding paths
+  - [Pythonista Planet](https://pythonistaplanet.com/template-extending-in-django/) - for template extending in Django
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
 

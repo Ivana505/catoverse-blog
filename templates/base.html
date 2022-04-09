@@ -29,18 +29,18 @@
         <a class="nav-link" href="{% url 'obesity' %}">Nutrition and Health</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Funny Cats</a>
+        <a class="nav-link" href="{% url 'funny' %}">Funny Cats</a>
       </li>
       {% if user.is_authenticated %}
       <li class="nav item">
-        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a> 
+        <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a> 
       </li>
       {% else %}
       <li class="nav-item">
         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+        <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
       </li>
       {% endif %}
    </ul>
