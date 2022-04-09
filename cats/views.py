@@ -81,6 +81,8 @@ class PostComment(View):
 class NutritionPageView(View):
     template_name = 'obesity.html',
 
+class healthPageView(View):
+    template_name = 'health.html'
 
 class FunnyPageView(View):
     template_name = 'funny.html',
