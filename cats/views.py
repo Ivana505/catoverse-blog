@@ -75,3 +75,6 @@ class PostComment(View):
                  "liked": liked,
              },
          )
+
+class NutritionPageView(View):
+    template_name = 'obesity.html'
