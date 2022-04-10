@@ -138,6 +138,8 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
 - [Font Awesome](https://fontawesome.com/) - for Icons on the page
+- [Freeformatter](https://www.freeformatter.com/) used to format and beautify HTML and CSS code
+- [PEP8 validator](http://pep8online.com/) used to validate Python code
 
 
 ## Credits and Acknowledgements
