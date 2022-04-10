@@ -4,6 +4,7 @@ from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from .models import Comment
 
 
 class PostList(generic.ListView):
@@ -77,6 +78,31 @@ class PostComment(View):
              },
          )
 
+#class CommentDelete(View):
+  #  def delete_comment(request, comment_id):
+     #   comment = get_object_or_404(Comment, id=comment_id)
+      #  comment.delete()
+       # messages.success(request, 'Comment deleted')
+      #  return HttpResponeRedirect(reverse('post_detail', args=[comment.post.slug]))
+
+#def delete_comment(request):
+    #id = request.POST['comment_id']
+   # pk = request.POST['post_id']
+   # if request.method == 'POST':
+     #   comment = get_object_or_404(Comment, id=id, pk=pk)
+    #    try:
+           # comment.delete()
+           # messages.success(request, 'You have successfully deleted the comment')
+     #   except:
+         #   messages.warning(request, 'The comment could not be deleted.')
+       # return redirect('get_posts')
+
+#class EditComment(View):
+   # def edit_comment(request, comment_id):
+      #  comment = get_object_or_404(Comment, id=comment_id)
+       # comment.edit()
+       # messages.success(request, 'Comment updated')
+      #  return HttpResponeRedirect(reverse('post_detail', args=[comment.post.slug]))
 
 class NutritionPageView(View):
     template_name = 'obesity.html',

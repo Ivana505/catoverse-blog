@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user == comment.user %}
+  <a href="{% url comments-delete comment.id %}">delete comment</a> 
+{% endif %}
+
+{% endblock content %}
