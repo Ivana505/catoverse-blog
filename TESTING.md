@@ -3,13 +3,15 @@
 Return to the [README.md](REAMDE.md)
 
 ## Validator testing and browser compatibility
-- I have tested Python code with - [PEP8 validator](http://pep8online.com/), first testing showed no errors.
+- I have tested Python code with - [PEP8 validator](http://pep8online.com/), first testing showed errors.
 
-![validation1](.png)
+![validation_settings](documents/testing/pep8_settings.png)
 
-- Second Python code validation showed line break before binary operator error which is mentioned under Unsolved bugs category.
+![validation_settings](documents/testing/pep8_urls.png)
 
-![validation2](.png)
+- All errors have been corrected
+
+![validation_corrected](documents/testing/pep8_surls.png)
 
 ## Accessibility
 - I have confirmed that the Website is accessible by inspecting it in Lighthouse on the [Google Chrome](https://www.google.com/chrome/?brand=FKPE&gclid=EAIaIQobChMIqOPWwuu69AIVFeDtCh1CEgKGEAAYASAAEgKvwvD_BwE&gclsrc=aw.ds) Dev tools.
@@ -27,9 +29,31 @@ Result for mobile devices
 ## Bugs
 
 ### Solved
-- I had 102 bugs on [Gitpod](https://www.gitpod.io/) and 101 have been fixed. Most of them were indentation bugs and lines of code too long.
+- All problems from [Gitpod](https://www.gitpod.io/) have been resolved. Most of them were indentation bugs and lines of code too long.
 
-![solved bugs](.png)
+![solved bugs](documents/testing/python_errors.png)
+
+- Bad Request (400) on [Herokuapp](https://dashboard.heroku.com/) was resolved by adding CSRF.
+
+![solved bugs](documents/testing/herokuapp_error.png)
+![solved bugs](documents/testing/csrf_added.png)
+
+- Bad Request (400) on [Herokuapp](https://dashboard.heroku.com/) was resolved by adding CSRF.
+
+![solved bugs](documents/testing/herokuapp_error.png)
+![solved bugs](documents/testing/csrf_added.png)
+
+- Error "GET / HTTP/1.1" 500 98967 on [Gitpod](https://www.gitpod.io/) was resolved by moving file in the correct folder.
+
+![solved bugs](documents/testing/error_index_page.png)
+
+- Error Improperly Congifured was resolved by adding space to DATABASES.
+
+![solved bugs](documents/testing/improperly_configured.png)
+
+- Error Invalid Host Eerror was corrected by adding allowed host on settings.py.
+
+![solved bugs](documents/testing/invalid_host_error.png)
 
 ### Unsolved bugs
 - Unsolved problem which relates to ms-toolsai.jupyter extension not bein synched and not added in .gitpod.yml. I have checked Slack community and this is known issue which we can ignore.
@@ -37,10 +61,3 @@ Result for mobile devices
 
 ![unsolved bug](documents/testing/unsolved_bugs.png)
 
-- Second Python code validation showed line break before binary operator error. 
-- Code was too long for one line so I followed [Stack Overflow](https://stackoverflow.com/questions/15435811/what-is-pep8s-e128-continuation-line-under-indented-for-visual-indent) guidelines to resolve it but then this error appeared after second validation with [PEP8 validator](http://pep8online.com/).
-
- - As per [Python](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator) this is styling issue.
- 
-
-![validation2](documentation/images/pep8_check2.png)
