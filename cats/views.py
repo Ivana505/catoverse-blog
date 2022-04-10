@@ -5,7 +5,6 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from .models import Comment
-from django.views.generic.edit import UpdateView, DeleteView
 
 
 class PostList(generic.ListView):
@@ -78,62 +77,6 @@ class PostComment(View):
                  "liked": liked,
              },
          )
-
-
-class EditCommentView(UpdateView):
-    """ View to handle editing a blog post """
-    model = Comment
-    form_class = CommentForm
-    success_url = '/blog/'
-    template_name = 'edit-blog-post.html'
-
-   
-    
-#class DeleteCommentView(DeleteView):
-   # model = Comment
-    #success_url = Comment('delete_comment')
-
-#class CommentDelete(View):
-  #  def delete_comment(request, comment_id):
-     #   comment = get_object_or_404(Comment, id=comment_id)
-      #  comment.delete()
-       # messages.success(request, 'Comment deleted')
-      #  return HttpResponeRedirect(reverse('post_detail', args=[comment.post.slug]))
-
-#def delete_comment(request):
-    #id = request.POST['comment_id']
-   # pk = request.POST['post_id']
-   # if request.method == 'POST':
-     #   comment = get_object_or_404(Comment, id=id, pk=pk)
-    #    try:
-           # comment.delete()
-           # messages.success(request, 'You have successfully deleted the comment')
-     #   except:
-         #   messages.warning(request, 'The comment could not be deleted.')
-       # return redirect('get_posts')
-
-#class EditComment(View):
-   # def edit_comment(request, comment_id):
-      #  comment = get_object_or_404(Comment, id=comment_id)
-       # comment.edit()
-       # messages.success(request, 'Comment updated')
-      #  return HttpResponeRedirect(reverse('post_detail', args=[comment.post.slug]))
-
-
-   # def edit_comment(request, comment_id):
-     #   comment = get_object_or_404(comment, id=comment_id)
-       # if request.method == "POST":
-           # form = CommentForm(request.POST, indtance=comment)
-          #  if form.is_valid():
-          #      fomr.save()
-          #  return redirect('view_comment')
-
-     #   form = CommentForm(instance=comment)
-
-   #     context = {
-    #        'form' : form
-     #   }
-      #  return render(request, 'templates/edit_comment.html', context)
 
 
 class NutritionPageView(View):

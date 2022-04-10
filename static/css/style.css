@@ -1,56 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap');
-
 body {
-    margin: 0;
-    font-family: 'Martel', serif; 
-    height: 100%;
+	margin: 0;
+	font-family: 'Martel', serif;
+	height: 100%;
 }
 
 main {
-    background-color: white;
+	background-color: white;
 }
 
 header {
-    background-color: white;
+	background-color: white;
 }
 
 li {
-    display: inline;
-    font-size: 2em;
-    padding: 10px;
-  }
-
-  li > a  {
-    color:black;
-  }
-
-  .nav-link {
-    text-decoration: none;
-    color:black;
+	display: inline;
+	font-size: 2em;
+	padding: 10px;
 }
 
+li>a {
+	color: black;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
 
 ul {
-    padding-top: 5px;
-    display:block;
+	padding-top: 5px;
+	display: block;
 }
 
 footer {
-    background-color: purple;
-    color: white;
+	background-color: purple;
+	color: white;
 }
 
-
 .btn-signup {
-    background-color: pink;
-    color: black;
+	background-color: pink;
+	color: black;
 }
 
 form {
-    background-color: lightgray;
+	background-color: lightgray;
 }
 
 .img {
-    width: 50%;
-    height: 100%
+	width: 50%;
+	height: 100%
 }

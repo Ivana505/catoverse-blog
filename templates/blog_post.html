@@ -9,9 +9,9 @@
          </div>
          <div class="done d-md-block col-md-6 masthead-image">
             {% if "placeholder" in post.featured_image.url %}
-            <img src="https://cdn.pixabay.com/photo/2020/08/16/16/46/cat-5493350_1280.jpg">
+            <img src="https://cdn.pixabay.com/photo/2020/08/16/16/46/cat-5493350_1280.jpg" alt="cat_image">
             {% else %}
-            <img class="card-img-top" src=" {{ post.featured_image.url }}">
+            <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="cat_image">
             {% endif %}
          </div>
       </div>
@@ -26,19 +26,17 @@
             </p>
             <div class="row">
                <div class="col-1">
-                  <strong>
                      {% if user.is_authenticated %}
                      <form class="d-inline" action="{% url 'post_like' post.slug %}" method="GET">
-                        
                         {% csrf_token %}
                         {% if liked %}
                         <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
-                           Liked
+                        Liked
                         <i class="fas fa-paw"></i>
                         </button>
                         {% else %}
                         <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
-                           Not Liked
+                        Not Liked
                         <i class="fas fa-paw"></i>
                         </button>
                         {% endif %}
@@ -47,7 +45,6 @@
                      <span class="text-secondary"><i class="fas fa-paw"></i></span>
                      {% endif %}
                      <span class="text-secondary"> {{ post.number_of_likes }}</span>
-                  </strong>
                </div>
                <div class="col-1">
                   {% with comments.count as total_comments %}
@@ -72,8 +69,6 @@
                   </span>wrote:
                </p>
                {{ comment.body | linebreaks }}
-               <a class="link" href="{% url 'edit-blog-post' post.slug %}">Edit</a>
-             
             </div>
             {% endfor %}
          </div>
@@ -88,8 +83,7 @@
             {% if user.is_authenticated %}
             <h3>Leave a comment:</h3>
             <p>Posting as: {{ user.username }}</p>
-            <!--<form method="POST" style="margin-top: 1.3em;">-->
-               <form class="d-inline" style="margin-top: 1.3em;" action="{% url 'post_comment' post.slug %}" method="POST">
+            <form class="d-inline" style="margin-top: 1.3em;" action="{% url 'post_comment' post.slug %}" method="POST">
                {{ comment_form | crispy }}
                {% csrf_token %}
                <button type="submit" class="btn btn-signup btn-lg">Submit</button>

@@ -1,5 +1,5 @@
 from . import views
-from .views import EditCommentView
+from .views import Comment
 from django.urls import path
 
 
@@ -11,6 +11,4 @@ urlpatterns = [
     path('obesity/', views.NutritionPageView.as_view(), name='obesity'),
     path('funny-cats/', views.FunnyPageView.as_view(), name='funny'),
     path('trimming-a-cats-claws/', views.FunnyPageView.as_view(), name='health'),
-    path('<slug:slug>/edit-blog-post/', views.EditCommentView.as_view(), name='edit-blog-post'),
-
 ]
