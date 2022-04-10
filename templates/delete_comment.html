@@ -1,9 +1,24 @@
-{% extends "base.html" %}
+<!--{% extends "base.html" %}
 
-{% block content %}
+{% block content %}Comment Delete{% endblock %}
 
-{% if user == comment.user %}
+{% if user.username == comment.name %}
+
+<h1> Delete {{ comment_form | crispy }} Comment </h1>
+
+<div class="delete-comment">
+  <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete the comment?</p>
+    <p id="delete-cmt">Delete</p>
+    <input type="submit" value="Delete comment" class="btn btn-danger">
+    <a href="{% url 'home' %}" class="btn dlt-btn">Cancel</a>
+  </form>
+</div>
+
+{% endblock %}
+
+<!--{% if user == comment.user %}
   <a href="{% url comments-delete comment.id %}">delete comment</a> 
-{% endif %}
+{% endif %}-->
 
-{% endblock content %}

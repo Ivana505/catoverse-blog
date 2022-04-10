@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from .models import Comment
+from django.views.generic.edit import UpdateView
 
 
 class PostList(generic.ListView):
@@ -78,6 +79,38 @@ class PostComment(View):
              },
          )
 
+class EditCommentView(UpdateView):
+    def post(self, request, slug, *args, **kwargs):
+        model = post
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comments = post.comments.filter(approved=True).order_by("created_on")
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.save()
+        else:
+            comment_form = CommentForm(data=request.POST)
+
+        return render(
+             request,
+             "blog_post.html",
+             {
+                 "post": post,
+                 "comments": comments,
+                 "commented": True,
+                 "comment_form": comment_form,
+                 "liked": liked,
+             },
+         )
+
 #class CommentDelete(View):
   #  def delete_comment(request, comment_id):
      #   comment = get_object_or_404(Comment, id=comment_id)
@@ -103,6 +136,23 @@ class PostComment(View):
        # comment.edit()
        # messages.success(request, 'Comment updated')
       #  return HttpResponeRedirect(reverse('post_detail', args=[comment.post.slug]))
+
+
+   # def edit_comment(request, comment_id):
+     #   comment = get_object_or_404(comment, id=comment_id)
+       # if request.method == "POST":
+           # form = CommentForm(request.POST, indtance=comment)
+          #  if form.is_valid():
+          #      fomr.save()
+          #  return redirect('view_comment')
+
+     #   form = CommentForm(instance=comment)
+
+   #     context = {
+    #        'form' : form
+     #   }
+      #  return render(request, 'templates/edit_comment.html', context)
+
 
 class NutritionPageView(View):
     template_name = 'obesity.html',
