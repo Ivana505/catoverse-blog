@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from .models import Comment
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import UpdateView, DeleteView
 
 
 class PostList(generic.ListView):
@@ -110,6 +110,12 @@ class EditCommentView(UpdateView):
                  "liked": liked,
              },
          )
+
+
+
+class DeleteCommentView(DeleteView):
+    model = Comment
+    success_url = Comment('delete_comment')
 
 #class CommentDelete(View):
   #  def delete_comment(request, comment_id):
