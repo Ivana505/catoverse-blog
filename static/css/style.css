@@ -49,3 +49,8 @@ footer {
 form {
     background-color: lightgray;
 }
+
+.img {
+    width: 50%;
+    height: 100%
+}

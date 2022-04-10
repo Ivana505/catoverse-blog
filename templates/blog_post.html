@@ -72,8 +72,8 @@
                   </span>wrote:
                </p>
                {{ comment.body | linebreaks }}
-             <button type="submit" class="btn btn-signup btn-lg">Edit</button>
-            <button type="submit" class="btn btn-signup btn-lg">Delete</button>
+               <a class="link" href="{% url 'edit-blog-post' post.slug %}">Edit</a>
+             
             </div>
             {% endfor %}
          </div>

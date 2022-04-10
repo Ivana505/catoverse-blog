@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+{%load static%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            {% for comment in comments %}
+            <a class="link" action="{% url 'edit-blog-post' post.slug %}" method="GET">Edit</a>
+        </div>
+    </div>
+    </div>
+
+    <form method="post" action="" enctype="multipart/form-data" class="update">
+            {{ comment_form | crispy }}
+            {% csrf_token %}
+        <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+    </form>
+
+{%endblock%}
+
