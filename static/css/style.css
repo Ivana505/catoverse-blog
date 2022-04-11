@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap');
+
+/**style for the body with the Google font chosen**/
+
 body {
 	margin: 0;
 	font-family: 'Martel', serif;
@@ -47,7 +50,34 @@ form {
 	background-color: lightgray;
 }
 
+
+/**image size**/
+
 .img {
 	width: 50%;
 	height: 100%
 }
+
+
+/**responsivness media query 
+for screens max-width 650 and lower**/
+
+@media screen and (max-width:650px) {
+	ul {
+		padding-top: 50px;
+	}
+}
+
+
+/**responsivness media query 
+for screens max-width 415 and lower**/
+
+@media screen and (max-width:415px) {
+	ul {
+		padding-top: 50px;
+	}
+	li {
+		font-size: 1.5em;
+	}
+}
+

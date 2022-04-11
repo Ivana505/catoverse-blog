@@ -70,5 +70,5 @@ Result for mobile devices
 
 ![unsolved bug](documents/testing/unsolved_bugs.png)
 
-- Unsolved bugs which I could not resolve are the HTML validation errors 
+- Unsolved bugs which I could not resolve are the HTML validation errors.
 

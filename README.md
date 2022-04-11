@@ -4,45 +4,55 @@ Users can share tips and experiences.
 
 You can access live page to Catoverse-Blog by clicking [here](https://catoverse-blog.herokuapp.com/).
 
-![landing page](.png)
+![landing page](documents/testing/am_i_responsive.png)
 
 # User Experience
-## Epics and User Stories
+## User Stories
 
-  - Epics and User Stories are made with an Agile approach. 
+  - User Stories are made with an Agile approach. 
 
-  - As a User I want toi see comment box so I can comment blog article.
-  - As a User I want to see a heart symbol so that I can like the post or a comment written by another user.
+  - As a User I want to see comment box so I can comment blog article.
+  - As a User I want to see a heart symbol so that I can like the post.
   - As a User I want to see register or sign up button so that I can create my account to be able to comment blog articles.
-  - As a User I would like to see a delete button on a comments page so that I can delete my comment if I want.
+  - As a User I want to see a delete button on a comments page so that I can delete my comment if I want.
   - As a User I want to see edit button so that I can edit my comment.
+  - As a User I want to see more blog posts under one topic so I can learn more about cats.
+
+![agile approach](documents/images/agile_approach.png)
 
 ## Features
-- Navigation
+- Navigation and Social Media Icons
     - Navigation is set at the center of the page with options to choose : 
-      "Home", "Nutrition and Health", "Funny Cats", "Register" and "Login".
+      "Home", "Nutrition", "Health", "Funny Cats", "Register" and "Sign In".
 
       - "Home" brings back User to the main page.
-      - "Nutrition and Health" shows blog content related to cats health.
-      - "Funny Cats" is a page where User can comment funny images and be involve in a competition and Weekly prize draws.
+      - "Nutrition" and "Health" show blog content related to this topic.
+      - "Funny Cats" is a page where User can comment funny images and be involves in a competition and Weekly prize draws.
 
-![navigation](.png)
+ ![navigation](documents/images/navigation_page.png)
 
-  - Blog post images with Author's name, Title and main topic, date when the blog is posted and paw icon which shows how many "paws/likes" does each blog have.
+ ![social media icons](documents/images/socialmedia.png)
 
-![Blog Post](.png)
+- Blog List and Blog Post
+    - Blog post list images with Author's name, Title and main topic, date when the blog is posted and paw icon which shows how many "paws/likes" does each blog have.
+
+![Blog Post List](documents/images/blog_post_list.png)
+
+![Blog Post when signed in](documents/images/signed_in_look.png)
 
 - Footer with Copyright sign, year when it was created and Blog name.
 
-![Footer](.png)
+![Footer](documents/images/footer.png)
 
-- Register link where the User can register and start commenting on the blog posts and "like" them.
+- Register and sign in link where the User can register and start commenting on the blog posts and "like" them.
 
-![Register](.png)
+![Register](documents/images/register.png)
 
-- Logout link where User can logout from the account.
+![Sign in](documents/images/signin.png)
 
-![Logout](.png)
+- Sign Out link where User can logout from the account.
+
+![Signout](documents/images/signout.png)
 
 
 ## Goals
@@ -65,6 +75,37 @@ As a user I would like to:
 - Be able to comment blog posts.
 - Be able to delete my posts.
 - Be able to like posts.
+
+## Design Choices
+
+Font choices
+
+I have decided to use [Google Fonts](https://fonts.google.com/). 
+ - Style used: Monserat weight 600
+ - This font complement this Website very well
+ - I have included example of the style below: <br>
+    ![fonts](documents/images/martel_font.png)
+
+
+Icons
+
+- Social Media Icons [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/) and [Pinterest](https://www.pinterest.ie/)) are added on the top center of the page, under navigation links where user will be able to find further Information about Catoverse Blog. Social Media Accounts are not created but show that the user will be able to click on the icons and find further details about the website there in the future.
+- [Fontawesome](https://fontawesome.com/) was used to add social media icons.
+
+  - Paw and cat icons used 
+
+  ![fonts](documents/images/paw.png)
+
+  ![fonts](documents/images/cat.png)
+
+## Color scheme and styling
+
+I have decided to use 5 colors in the project: 
+ - white for the background and for the text color of the footer and black color for the text
+ - purple is used as a background color for the footer
+ - pink is used as a background color for the submit button
+ - light gray is used as a background colot on the forms
+![colors](documents/images/color_scheme.png)
 
 ## Wireframes
 All wireframes are created with [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
@@ -89,8 +130,6 @@ Register Page
 
 Sign In Page
 ![sign in page](documents/wireframes/sign_in_page.png)
-
-Style and font Used:
 
 
 ## Testings
@@ -124,6 +163,24 @@ import pyfiglet
 import random
 import sys
 import os
+asgiref==3.5.0
+backports.zoneinfo==0.2.1
+cloudinary==1.29.0
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
+Django==3.2
+django-allauth==0.50.0
+django-crispy-forms==1.14.0
+django-summernote==0.8.20.0
+gunicorn==20.1.0
+oauthlib==3.2.0
+psycopg2==2.9.3
+psycopg2-binary==2.9.3
+PyJWT==2.3.0
+python3-openid==3.2.0
+pytz==2022.1
+requests-oauthlib==1.3.1
+sqlparse==0.4.2
 
 The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
@@ -140,6 +197,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Font Awesome](https://fontawesome.com/) - for Icons on the page
 - [Freeformatter](https://www.freeformatter.com/) used to format and beautify HTML and CSS code
 - [PEP8 validator](http://pep8online.com/) used to validate Python code
+- [Coloors](https://coolors.co/) to create color scheme for the UX section
 
 
 ## Credits and Acknowledgements
@@ -161,7 +219,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [The Catnip Times](https://www.thecatniptimes.com/)
   - [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/) - for adding footer with bootstrap
   - [Get bootstrap](https://getbootstrap.com/docs/4.0/components/card/#header-and-footer) - to add footer to base.html by using cards
-  - [Toptal]https://www.toptal.com/designers/htmlarrows/) - to look for HTML Symbols
+  - [Toptal](https://www.toptal.com/designers/htmlarrows/) - to look for HTML Symbols
   - [Wagwalking](https://wagwalking.com/cat/condition/obesity) - text for the obesity in cats blog post
   - [Humane Society](https://www.humanesociety.org/resources/trimming-cats-claws) - text for the trimming of cats claws
   - [Litter Robot](https://www.litter-robot.com/blog/heterochromia-cats-with-different-colored-eyes/) - text for heterochromia blog post
