@@ -20,6 +20,8 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
 
 ![agile approach](documents/images/agile_approach.png)
 
+Future development : Editing and deleting posts by user, for now only available under Django Administration.
+
 ## Features
 - Navigation and Social Media Icons
     - Navigation is set at the center of the page with options to choose : 
@@ -33,6 +35,7 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
  ![navigation](documents/images/navigation_page.png)
 
 - Social Media Icons
+
  ![social media icons](documents/images/socialmedia.png)
 
 - Blog List and Blog Post
