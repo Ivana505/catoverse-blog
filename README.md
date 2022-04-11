@@ -9,7 +9,7 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
 # User Experience
 ## User Stories
 
-  - User Stories are made with an Agile approach. 
+- User Stories are made with an Agile approach. 
 
   - As a User I want to see comment box so I can comment blog article.
   - As a User I want to see a heart symbol so that I can like the post.
@@ -27,14 +27,17 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
 
       - "Home" brings back User to the main page.
       - "Nutrition" and "Health" show blog content related to this topic.
-      - "Funny Cats" is a page where User can comment funny images and be involves in a competition and Weekly prize draws.
+      - "Funny Cats" is a page where User can comment funny images and be involved in a competition and Weekly prize draws.
 
+- Navigation
  ![navigation](documents/images/navigation_page.png)
 
+- Social Media Icons
  ![social media icons](documents/images/socialmedia.png)
 
 - Blog List and Blog Post
-    - Blog post list images with Author's name, Title and main topic, date when the blog is posted and paw icon which shows how many "paws/likes" does each blog have.
+    - Blog post lists include a cat image with these details : Author's name, Title and main topic, date when the blog was posted and paw icon which shows how many "paws/likes" does each blog have.
+    - Blog post includes a blog post with text about specific topic and under the text option to like or comment the page, only for the users who are registered.
 
 ![Blog Post List](documents/images/blog_post_list.png)
 
@@ -81,15 +84,15 @@ As a user I would like to:
 Font choices
 
 I have decided to use [Google Fonts](https://fonts.google.com/). 
- - Style used: Monserat weight 600
- - This font complement this Website very well
+ - Font Style used: Monserat weight 600
+ - This font complements Catoverse Blog very well
  - I have included example of the style below: <br>
     ![fonts](documents/images/martel_font.png)
 
 
 Icons
 
-- Social Media Icons [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/) and [Pinterest](https://www.pinterest.ie/)) are added on the top center of the page, under navigation links where user will be able to find further Information about Catoverse Blog. Social Media Accounts are not created but show that the user will be able to click on the icons and find further details about the website there in the future.
+- Social Media Icons [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/) and [Pinterest](https://www.pinterest.ie/) are added on the top center of the page, under navigation links where user will be able to find further Information about Catoverse Blog. Social Media Accounts are not created but show that the user will be able to click on the icons and find further details about the website there in the future.
 - [Fontawesome](https://fontawesome.com/) was used to add social media icons.
 
   - Paw and cat icons used 
@@ -184,8 +187,7 @@ sqlparse==0.4.2
 
 The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
-![deployment1](.png)
-
+![deployment1](documents/images/deployment.png)
 
   # Languages and technologies used
 - [Python](https://www.python.org/) - used for core programming language and logic
@@ -193,16 +195,16 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Git](https://git-scm.com/) - used for version control
 - [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
 - [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
-- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) - for generating Secret Key
 - [Font Awesome](https://fontawesome.com/) - for Icons on the page
-- [Freeformatter](https://www.freeformatter.com/) used to format and beautify HTML and CSS code
-- [PEP8 validator](http://pep8online.com/) used to validate Python code
-- [Coloors](https://coolors.co/) to create color scheme for the UX section
+- [Freeformatter](https://www.freeformatter.com/) - used to format and beautify HTML and CSS code
+- [PEP8 validator](http://pep8online.com/) - used to validate Python code
+- [Coloors](https://coolors.co/) - to create color scheme for the UX section
 
 
 ## Credits and Acknowledgements
 
-  Main credit for the code that helped me in this learning process and to create this project was Full Stack Frameworks (FST) videos: "Hello Django" and "I Think Therefore I Blog".
+  Main credit for the code that helped me in this learning process and to create this project was Full Stack Frameworks (FST) videos: "Hello Django" and "I Think Therefore I Blog" by Code Institute.
 
   Image and Social Media sources:
 - [YouTube channel ](https://www.youtube.com/)
@@ -229,4 +231,4 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
 
 ### Content
- - Content was created intentionally for the purpose of this project and this Website. Credits go to the creator of the Website.
+ - Content was created intentionally for the purpose of this project and this Website.
