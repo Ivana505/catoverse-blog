@@ -72,3 +72,10 @@ Result for mobile devices
 
 - Unsolved bugs which I could not resolve are the HTML validation errors.
 
+
+### Django Administration testing
+- I have tested Django Administration, approving comments and editing blogs is working as it should.
+
+![Django Administration](documents/testing/django_administration.png)
+
+
