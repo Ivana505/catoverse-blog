@@ -68,7 +68,7 @@
                   {{ comment.created_on }}
                   </span>wrote:
                </p>
-               {{ comment.body | linebreaks }}
+               {{ comment.body | linebreaks | safe }}
             </div>
             {% endfor %}
          </div>

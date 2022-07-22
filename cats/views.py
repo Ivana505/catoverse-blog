@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 from .models import Comment
 
 
@@ -82,8 +82,23 @@ class PostComment(View):
 class NutritionPageView(View):
     template_name = 'obesity.html',
 
+
 class healthPageView(View):
     template_name = 'health.html'
 
+
 class FunnyPageView(View):
     template_name = 'funny.html',
+
+
+def add_post(request):
+    blog_form = PostForm(request.POST or None)
+    if request.method == 'POST':
+        if blog_form.is_valid():
+            blog_form.instance.author = request.user.id
+            form = blog_form.save()
+    template = 'add_blog_post.html'
+    context = {
+        'blog_form': blog_form,
+    }
+    return render(request, template, context)
