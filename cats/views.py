@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import ListView
+from django.views.generic import ListView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
 from .models import Comment
 from django.contrib.auth.models import User
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -104,3 +105,9 @@ def add_post(request):
         'blog_form': blog_form,
     }
     return render(request, template, context)
+
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'delete_blog_post.html'
+    success_url = reverse_lazy('home')

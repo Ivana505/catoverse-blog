@@ -24,6 +24,9 @@
                         <h2 class="card-title">{{ post.title }}</h2>
                         <p class="card-text">{{ post.excerpt }}</p>
                      </a>
+                     {% if request.user.is_superuser %}
+                     <a href="{% url 'delete_post' post.slug %}">Delete</a>
+                     {% endif %}
                      <hr />
                      <p class="card-text text-muted h5">{{ post.created_on}} <i
                         class="fas fa-paw"></i>{{ post.number_of_likes }}</p>
