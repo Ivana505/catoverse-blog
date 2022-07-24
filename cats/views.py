@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
 from .models import Comment
+from django.contrib.auth.models import User
 
 
 class PostList(generic.ListView):
