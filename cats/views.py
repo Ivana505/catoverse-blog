@@ -5,7 +5,6 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
 from .models import Comment
-from django.contrib.auth.models import User
 
 
 class PostList(generic.ListView):
@@ -97,7 +96,7 @@ def add_post(request):
     user = get_object_or_404(User, username=request.user.username)
     if request.method == 'POST':
         if blog_form.is_valid():
-            blog_form.instance.author = user.id
+            blog_form.instance.author = user
             form = blog_form.save()
     template = 'add_blog_post.html'
     context = {
