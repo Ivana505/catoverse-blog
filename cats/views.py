@@ -93,9 +93,10 @@ class FunnyPageView(View):
 
 def add_post(request):
     blog_form = PostForm(request.POST or None)
+    user = get_object_or_404(User, username=request.user.username)
     if request.method == 'POST':
         if blog_form.is_valid():
-            blog_form.instance.author = request.user.id
+            blog_form.instance.author = user.id
             form = blog_form.save()
     template = 'add_blog_post.html'
     context = {
