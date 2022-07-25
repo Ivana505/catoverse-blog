@@ -111,3 +111,10 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_blog_post.html'
     success_url = reverse_lazy('home')
+
+
+class DeleteCommentView(DeleteView):
+    model = Post
+    template_name = 'delete_comment.html'
+    fields = ['comment.body']
+    success_url = reverse_lazy('home')

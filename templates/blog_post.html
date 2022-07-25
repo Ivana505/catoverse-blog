@@ -75,9 +75,16 @@
                   </span>wrote:
                </p>
                {{ comment.body | linebreaks | safe }}
+               {% if user.is_superuser %}
+               <hr />
+               <form class="d-inline" action="{% url 'delete_comment' post.slug %}" method="GET">
+                  <a href="{% url 'delete_comment' post.slug %}"></a>
+                  </form>
+                  {% endif %}
             </div>
             {% endfor %}
          </div>
+       
       </div>
       <div class="col-md-4 card mb-4 mt-3 ">
          <div class="card-body">
