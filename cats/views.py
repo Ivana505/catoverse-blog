@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.contrib import messages
 from django.views.generic import ListView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -94,14 +95,40 @@ class FunnyPageView(View):
 
 
 def add_post(request):
+    if not request.user.is_superuser:
+        messages.error(request, "not authorised")
+        return redirect("home")
     blog_form = PostForm(request.POST or None)
     user = get_object_or_404(User, username=request.user.username)
     if request.method == 'POST':
         if blog_form.is_valid():
             blog_form.instance.author = request.user
             form = blog_form.save()
+            messages.success(request, "post added")
+            return redirect("home")
     template = 'add_blog_post.html'
     context = {
+        'blog_form': blog_form,
+    }
+    return render(request, template, context)
+
+
+def edit_post(request, slug):
+    if not request.user.is_superuser:
+        messages.error(request, "not authorised")
+        return redirect("home")
+    post = get_object_or_404(Post, slug=slug)
+    blog_form = PostForm(request.POST or None, instance=post)
+    user = get_object_or_404(User, username=request.user.username)
+    if request.method == 'POST':
+        if blog_form.is_valid():
+            blog_form.instance.author = request.user
+            form = blog_form.save()
+            messages.success(request, "post edited")
+            return redirect(reverse('post_detail', kwargs={'slug': post.slug}))
+    template = 'edit_blog_post.html'
+    context = {
+        'post': post,
         'blog_form': blog_form,
     }
     return render(request, template, context)
@@ -113,8 +140,12 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 
-class DeleteCommentView(DeleteView):
-    model = Post
-    template_name = 'delete_comment.html'
-    fields = ['comment.body']
-    success_url = reverse_lazy('home')
+def delete_comment(request, cid, pid):
+    if not request.user.is_superuser:
+        messages.error(request, "not authorised")
+        return redirect("home")
+    comment = get_object_or_404(Comment, id=cid)
+    post = get_object_or_404(Post, id=pid)
+    messages.success(request, "comment deleted")
+    comment.delete()
+    return redirect(reverse('post_detail', kwargs={'slug': post.slug}))

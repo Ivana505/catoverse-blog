@@ -54,6 +54,7 @@
                </div>
                {% if user.is_superuser %}
                <hr />
+               <a href="{% url 'edit_post' post.slug %}">Edit</a>
                <form class="d-inline" action="{% url 'delete_post' post.slug %}" method="GET">
                   <a href="{% url 'delete_post' post.slug %}">Delete</a>
                   </form>
@@ -77,9 +78,7 @@
                {{ comment.body | linebreaks | safe }}
                {% if user.is_superuser %}
                <hr />
-               <form class="d-inline" action="{% url 'delete_comment' post.slug %}" method="GET">
-                  <a href="{% url 'delete_comment' post.slug %}"></a>
-                  </form>
+                  <a href="{% url 'delete_comment' comment.id post.id %}">Delete</a>
                   {% endif %}
             </div>
             {% endfor %}

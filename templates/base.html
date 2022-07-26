@@ -31,6 +31,11 @@
                   </li>
                   <!-- django registration, credit goes to Code Institute set of videos "I Think Therefore I Blog" -->
                   {% if user.is_authenticated %}
+                     {% if user.is_superuser %}
+                     <li class="nav item">
+                        <a class="nav-link" href="{% url 'add_post' %}">Add Post</a> 
+                     </li>
+                     {% endif %}
                   <li class="nav item">
                      <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a> 
                   </li>
