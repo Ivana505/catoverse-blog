@@ -26,30 +26,30 @@
             </p>
             <div class="row">
                <div class="col-1">
-                     {% if user.is_authenticated %}
-                     <form class="d-inline" action="{% url 'post_like' post.slug %}" method="GET">
-                        {% csrf_token %}
-                        {% if liked %}
-                        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                  {% if user.is_authenticated %}
+                  <form class="d-inline" action="{% url 'post_like' post.slug %}" method="GET">
+                     {% csrf_token %}
+                     {% if liked %}
+                     <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
                         Liked
                         <i class="fas fa-paw"></i>
-                        </button>
-                        {% else %}
-                        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                     </button>
+                     {% else %}
+                     <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
                         Not Liked
                         <i class="fas fa-paw"></i>
-                        </button>
-                        {% endif %}
-                     </form>
-                     {% else %}
-                     <span class="text-secondary"><i class="fas fa-paw"></i></span>
+                     </button>
                      {% endif %}
-                     <span class="text-secondary"> {{ post.number_of_likes }}</span>
+                  </form>
+                  {% else %}
+                  <span class="text-secondary"><i class="fas fa-paw"></i></span>
+                  {% endif %}
+                  <span class="text-secondary"> {{ post.number_of_likes }}</span>
                </div>
                <div class="col-1">
                   {% with comments.count as total_comments %}
                   <strong class="text-secondary"><i class="far fa-comments"></i>
-                  {{ total_comments }}</strong>
+                     {{ total_comments }}</strong>
                   {% endwith %}
                </div>
                {% if user.is_superuser %}
@@ -57,8 +57,8 @@
                <a href="{% url 'edit_post' post.slug %}">Edit</a>
                <form class="d-inline" action="{% url 'delete_post' post.slug %}" method="GET">
                   <a href="{% url 'delete_post' post.slug %}">Delete</a>
-                  </form>
-                  {% endif %}
+               </form>
+               {% endif %}
             </div>
          </div>
       </div>
@@ -72,18 +72,18 @@
                <p class="font-weight-bold">
                   {{ comment.name }}
                   <span class=" text-muted font-weight-normal">
-                  {{ comment.created_on }}
+                     {{ comment.created_on }}
                   </span>wrote:
                </p>
                {{ comment.body | linebreaks | safe }}
                {% if user.is_superuser %}
                <hr />
-                  <a href="{% url 'delete_comment' comment.id post.id %}">Delete</a>
-                  {% endif %}
+               <a href="{% url 'delete_comment' comment.id post.id %}">Delete</a>
+               {% endif %}
             </div>
             {% endfor %}
          </div>
-       
+
       </div>
       <div class="col-md-4 card mb-4 mt-3 ">
          <div class="card-body">

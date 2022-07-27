@@ -2,7 +2,7 @@
 Catoverse-Blog is designed for cat lovers. It helps understand cats behaviour and their needs better.
 Users can share tips and experiences.
 
-You can access live page to Catoverse-Blog by clicking [here](https://catoverse-blog.herokuapp.com/).
+You can access the live page to Catoverse-Blog by clicking [here](https://catoverse-blog.herokuapp.com/).
 
 ![landing page](documents/testing/am_i_responsive.png)
 
@@ -15,12 +15,12 @@ You can access live page to Catoverse-Blog by clicking [here](https://catoverse-
   - As a User I want to see a heart symbol so that I can like the post.
   - As a User I want to see register or sign up button so that I can create my account to be able to comment blog articles.
   - As a User I want to see a delete button on a comments page so that I can delete my comment if I want.
-  - As a User I want to see edit button so that I can edit my comment.
+  - As a User I want to see the edit button so that I can edit my comment.
   - As a User I want to see more blog posts under one topic so I can learn more about cats.
 
 ![agile approach](documents/images/agile_approach.png)
 
-Future development : Editing and deleting posts by user, for now only available under Django Administration.
+Future development : Editing and deleting posts by the user, for now only available under Django Administration.
 
 ## Features
 - Navigation and Social Media Icons
@@ -40,7 +40,7 @@ Future development : Editing and deleting posts by user, for now only available 
 
 - Blog List and Blog Post
     - Blog post lists include a cat image with these details : Author's name, Title and main topic, date when the blog was posted and paw icon which shows how many "paws/likes" does each blog have.
-    - Blog post includes a blog post with text about specific topic and under the text option to like or comment the page, only for the users who are registered.
+    - Blog post includes a blog post with text about the specific topic and under the text option to like or comment the page, only for the users who are registered.
 
 ![Blog Post List](documents/images/blog_post_list.png)
 
@@ -77,7 +77,7 @@ The target audience are all the people who love cats and are interested in diffe
 
 As a user I would like to:
 
-- Be able register and create account.
+- Be able register and create an account.
 - Be able to comment blog posts.
 - Be able to delete my posts.
 - Be able to like posts.
@@ -95,7 +95,7 @@ I have decided to use [Google Fonts](https://fonts.google.com/).
 
 Icons
 
-- Social Media Icons [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/) and [Pinterest](https://www.pinterest.ie/) are added on the top center of the page, under navigation links where user will be able to find further Information about Catoverse Blog. Social Media Accounts are not created but show that the user will be able to click on the icons and find further details about the website there in the future.
+- Social Media Icons [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/) and [Pinterest](https://www.pinterest.ie/) are added on the top center of the page, under navigation links where users will be able to find further Information about Catoverse Blog. Social Media Accounts are not created, but show that the user will be able to click on the icons and find further details about the website there in the future.
 - [Fontawesome](https://fontawesome.com/) was used to add social media icons.
 
   - Paw and cat icons used 
@@ -107,10 +107,10 @@ Icons
 ## Color scheme and styling
 
 I have decided to use 5 colors in the project: 
- - white for the background and for the text color of the footer and black color for the text
- - purple is used as a background color for the footer
- - pink is used as a background color for the submit button
- - light gray is used as a background colot on the forms
+ - White for the background and for the text color of the footer and black color for the text
+ - Purple is used as a background color for the footer
+ - Pink is used as a background color for the submit button
+ - Light gray is used as a background color on the forms
 ![colors](documents/images/color_scheme.png)
 
 ## Wireframes
@@ -140,7 +140,7 @@ Sign In Page
 
 ## Testings
 
-To view all testing documentation please refer to [TESTING.md](TESTING.md)
+To view all testing documentation, please refer to [TESTING.md](TESTING.md)
 
 ### Local Deployment
 
@@ -152,7 +152,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Ivana505/catoverse-blog)
 
-The site was deployed to [Heroku](https://catoverse-blog.herokuapp.com/) pages using following steps: 
+The site was deployed to [Heroku](https://catoverse-blog.herokuapp.com/) pages using the following steps: 
    - Sign up or Login to Heroku 
    - Click on the "NEW APPLICATION" and create an App name and choose your region
    - Click on "Deploy" and choose your deployment method
@@ -188,6 +188,8 @@ pytz==2022.1
 requests-oauthlib==1.3.1
 sqlparse==0.4.2
 
+
+
 The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 
 ![deployment1](documents/images/deployment.png)
@@ -197,17 +199,17 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
 - [Github](https://github.com/) - used for securely storing the code online
 - [Git](https://git-scm.com/) - used for version control
 - [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
-- [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
+- [Heroku](https://heroku.com/) - platform used to deploy the Catoverse Blog to cloud online
 - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) - for generating Secret Key
 - [Font Awesome](https://fontawesome.com/) - for Icons on the page
 - [Freeformatter](https://www.freeformatter.com/) - used to format and beautify HTML and CSS code
 - [PEP8 validator](http://pep8online.com/) - used to validate Python code
-- [Coloors](https://coolors.co/) - to create color scheme for the UX section
+- [Coloors](https://coolors.co/) - to create a color scheme for the UX section
 
 
 ## Credits and Acknowledgements
 
-  Main credit for the code that helped me in this learning process and to create this project was Full Stack Frameworks (FST) videos: "Hello Django" and "I Think Therefore I Blog" by Code Institute.
+  I appreciate all the help I received from Code Institute Slack Comunity, tutor suport and my mentor. This was a learning curve for me and Full Stack Frameworks (FST) videos: "Hello Django" and "I Think Therefore I Blog" by Code Institute helped me with the base code for this project.
 
   Image and Social Media sources:
 - [YouTube channel ](https://www.youtube.com/)
