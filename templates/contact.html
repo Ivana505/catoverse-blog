@@ -8,8 +8,9 @@
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <form method="post" action="" enctype="multipart/form-data" class="update">
-                {{ contact_form | crispy }}
+                <!--{{ contact_form | crispy }}-->
                 {% csrf_token %}
+                    {{form.as_p}}
                 <button type="submit" class="btn btn-signup btn-lg">Submit</button>
             </form>
         </div>

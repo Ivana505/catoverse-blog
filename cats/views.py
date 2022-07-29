@@ -4,10 +4,11 @@ from django.contrib import messages
 from django.views.generic import ListView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm, PostForm
+from .forms import CommentForm, PostForm, ContactForm
 from .models import Comment
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
+from django.core.mail import send_mail, BadHeaderError
 
 
 class PostList(generic.ListView):
@@ -149,3 +150,23 @@ def delete_comment(request, cid, pid):
     messages.success(request, "comment deleted")
     comment.delete()
     return redirect(reverse('post_detail', kwargs={'slug': post.slug}))
+
+
+def contact(request):
+    if request.method == 'POST' :
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = "Website Inquiry"
+            body = {
+            'name' : form.cleaned_data['name'],
+            'email_address' : form.cleaned_data['email_address'],
+            'phone' : form.cleaned_data['phone'],
+            'message' : form.cleaned_data['message'],
+            }
+            message = "\n".join(body.values())
+
+            return redirect ("main:homepage")
+
+    form = ContactForm()
+    return render(request, "contact.html", {'form':form})
+
