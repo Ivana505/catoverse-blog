@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <form method="post" action="" enctype="multipart/form-data" class="update">
+            <form method="post" enctype="multipart/form-data" class="update">
                 {{ blog_form | crispy }}
                 {% csrf_token %}
                 <button type="submit" class="btn btn-signup btn-lg">Submit</button>
