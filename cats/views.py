@@ -9,6 +9,7 @@ from .models import Comment
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
 from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
 
 
 class PostList(generic.ListView):
@@ -165,7 +166,13 @@ def contact(request):
             }
             message = "\n".join(body.values())
 
-            return redirect("main:homepage")
+            try:
+                send_mail(subject, message, 'admin@test.com', ['admin@test.com']) 
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+
+            return redirect("home")
+
 
     form = ContactForm()
     return render(request, "contact.html", {'form': form})
