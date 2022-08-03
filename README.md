@@ -25,7 +25,7 @@ Future development : Editing and deleting posts by the user, for now only availa
 ## Features
 - Navigation and Social Media Icons
     - Navigation is set at the center of the page with options to choose : 
-      "Home", "Nutrition", "Health", "Funny Cats", "Register" and "Sign In".
+      "Home", "Nutrition", "Health", "Funny Cats", "Register", "Sign In" and "Contact Us"
 
       - "Home" brings back User to the main page.
       - "Nutrition" and "Health" show blog content related to this topic.
@@ -45,6 +45,13 @@ Future development : Editing and deleting posts by the user, for now only availa
 ![Blog Post List](documents/images/blog_post_list.png)
 
 ![Blog Post when signed in](documents/images/signed_in_look.png)
+
+  - Blog post includes extra Edit and Delete button to edit or delete blog post.
+![Blog Post when signed in admin](documents/images/signed_in_look_admin.png)
+![Blog Post when signed in admin](documents/images/signed_in_look_admin2.png)
+
+ - Administrator als ohas an option to create a ne blog post.
+![Blog Post when signed in admin](documents/images/add_blog_post.png)
 
 - Footer with Copyright sign, year when it was created and Blog name.
 
@@ -232,6 +239,7 @@ The live site can be previewed [here](https://catoverse-blog.herokuapp.com/).
   - [Litter Robot](https://www.litter-robot.com/blog/heterochromia-cats-with-different-colored-eyes/) - text for heterochromia blog post
   - [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page) - for adding paths
   - [Pythonista Planet](https://pythonistaplanet.com/template-extending-in-django/) - for template extending in Django
+  - [Ordinary Coders](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend) - helped me with creating "Contact Us" page
 
 I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
 
