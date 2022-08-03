@@ -46,11 +46,11 @@ Future development : Editing and deleting posts by the user, for now only availa
 
 ![Blog Post when signed in](documents/images/signed_in_look.png)
 
-  - Blog post includes extra Edit and Delete button to edit or delete blog post.
+  - Blog post when Administrator is logged in includes extra Edit and Delete button to edit or delete blog post.
 ![Blog Post when signed in admin](documents/images/signed_in_look_admin.png)
 ![Blog Post when signed in admin2](documents/images/signed_in_look_admin2.png)
 
- - Administrator als ohas an option to create a ne blog post.
+ - Administrator also has an option to create a new blog post.
 ![Blog Post when signed in admin](documents/images/add_blog_post.png)
 
 - Footer with Copyright sign, year when it was created and Blog name.
