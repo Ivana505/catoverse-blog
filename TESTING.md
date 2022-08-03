@@ -16,9 +16,8 @@ Return to the [README.md](README.md)
 
 - HTML Validation was made with ![W3 validator](https://validator.w3.org/)
 
-![validation_settings](documents/testing/html_validator_base.png)
-![validation_settings](documents/testing/html_validator_index.png)
-![validation_settings](documents/testing/html_validator_blog_post.png)
+![validation_settings](documents/testing/html_validation.png)
+
 
 - CSS Validation was made with Jigsaw ![W3 validator](https://jigsaw.w3.org/)
 
@@ -69,8 +68,6 @@ Result for mobile devices
 - This is also part of the repository cloned for the project that should not be touched.
 
 ![unsolved bug](documents/testing/unsolved_bugs.png)
-
-- Unsolved bugs which I could not resolve are the HTML validation errors.
 
 
 ### Django Administration testing
