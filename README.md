@@ -55,7 +55,7 @@ Future development : Editing and deleting posts by the user, for now only availa
 ![Blog Post edit](documents/images/edit_blog_post.png)
 ![Blog Post delete](documents/images/confirm_delete.png)
 
- - Administrator also has an option to create, edit and delete a blog post.
+ - User and admin sign in and sign out notification.
 ![Sign in notification](documents/images/sign_in_notification.png)
 ![Sign out noticiation](documents/images/sign_out_notification.png)
 
