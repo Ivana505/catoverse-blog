@@ -153,20 +153,20 @@ def delete_comment(request, cid, pid):
 
 
 def contact(request):
-    if request.method == 'POST' :
+    if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             subject = "Website Inquiry"
             body = {
-            'name' : form.cleaned_data['name'],
-            'email_address' : form.cleaned_data['email_address'],
-            'phone' : form.cleaned_data['phone'],
-            'message' : form.cleaned_data['message'],
+             'name': form.cleaned_data['name'],
+             'email_address': form.cleaned_data['email_address'],
+             'phone': form.cleaned_data['phone'],
+             'message': form.cleaned_data['message'],
             }
             message = "\n".join(body.values())
 
-            return redirect ("main:homepage")
+            return redirect("main:homepage")
 
     form = ContactForm()
-    return render(request, "contact.html", {'form':form})
+    return render(request, "contact.html", {'form': form})
 
