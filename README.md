@@ -2,7 +2,7 @@
 Catoverse-Blog is designed for cat lovers. It helps understand cats behaviour and their needs better.
 Users can share tips and experiences.
 
-You can access the live page to Catoverse-Blog by clicking [here](https://catoverse-blog.herokuapp.com/).
+You can access the live page to Catoverse-Blog by clicking [here](https://catoverse-blog.onrender.com).
 
 ![landing page](documents/testing/am_i_responsive.png)
 
