@@ -1,1 +1,0 @@
-web: gunicorn django_catoverse.wsgi:application
